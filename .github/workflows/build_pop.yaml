@@ -19,7 +19,7 @@ jobs:
         export HOME=/root
         eval $(opam env)
         opam update
-        opam pin add yabaitech_techfest11_pop.opam "file://${PWD}"
+        opam pin add yabaitech-techfest11-pop.opam "file://${PWD}"
         satyrographos install
 
     - name: Build the pop

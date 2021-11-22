@@ -9,7 +9,7 @@ authors: [
     "Masaki Waga"
     "Yuito Murase"
 ]
-license: "MIT License"
+license: "MIT"
 homepage: "https://github.com/yabaitechtokyo/techbookfest11-pop"
 bug-reports: "https://github.com/yabaitechtokyo/techbookfest11-pop/issues"
 dev-repo: "git+https://github.com/yabaitechtokyo/techbookfest11-pop.git"
@@ -17,11 +17,12 @@ depends: [
   "satysfi" {= "0.0.6"}
   "satyrographos" {>= "0.0.2.7" & < "0.0.3"}
   "satysfi-base" {>= "1.2.1" & < "2.0.0"}
+  "satysfi-fonts-noto-sans" {>= "2.000"}
 ]
 build: [ ]
 install: [
   ["satyrographos" "opam" "install"
-   "--name" "cnf-stdja-doc"
+   "--name" "yabaitech-techfest11-pop"
    "--prefix" "%{prefix}%"
    "--script" "%{build}%/Satyristes"]
 ]
